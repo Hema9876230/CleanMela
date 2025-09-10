@@ -1,3 +1,7 @@
+We have deployed frontend part of cleanmela on Netlify .
+Link:-
+https://cleanmela.netlify.app/
+
 Overview
 
 CleanMela is a smart sanitation and emergency support application designed for Ujjain Mahakumbh 2025.

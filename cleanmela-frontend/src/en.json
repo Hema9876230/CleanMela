@@ -1,0 +1,15 @@
+{
+  "welcome": "Welcome to CleanMela",
+  "description": "Smart Sanitation & Emergency Support App",
+  "login": "Login",
+  "register": "Register",
+  "logout": "Logout",
+  "loggedInAs": "Logged in as",
+  "footerText": "Built for a Smarter, Safer Mela",
+  "botGreeting": "👋 Hi! I’m CleanMela Assistant. How can I help you?",
+  "botDefaultReply": "🤔 Sorry, I didn’t get that.",
+  "botToilet": "🚻 Nearest toilet is at Gate 2, Sector A.",
+  "botEmergency": "🚨 Please call 108 or use the SOS feature.",
+  "botClean": "🧹 You can report sanitation issues in the Report section.",
+  "chatPlaceholder": "Type your message..."
+}

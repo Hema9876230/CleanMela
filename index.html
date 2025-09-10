@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CleanMela</title>
+    <link rel="icon" href="/cleanmela.png" />
+    
+    <!-- Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <style>
+      :root {
+        --ok: #24d364;
+        --warn: #f59e0b;
+        --bad: #ef4444;
+        --bg: #ffffff;
+        --card: #f3f4f6;
+        --text: #111827;
+        --primary: #2563eb; /* Blue-600 */
+      }
+
+      body {
+        margin: 0;
+        font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 24px;
+      }
+
+      nav {
+        display: flex;
+        gap: 16px;
+        margin-bottom: 24px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
+
+      nav a {
+        padding: 8px 14px;
+        border-radius: 10px;
+        color: var(--text);
+        font-weight: 500;
+        transition: background 0.3s ease;
+      }
+
+      nav a:hover {
+        background: rgba(37, 99, 235, 0.1);
+        color: var(--primary);
+      }
+
+      h1, h2 {
+        color: #0f172a;
+        margin: 0 0 12px 0;
+        font-weight: 800;
+        text-align: center;
+        font-family: 'Inter', sans-serif;
+      }
+
+      p {
+        font-size: 18px;
+        text-align: center;
+        margin: 10px 0;
+        color: var(--text);
+      }
+
+      .grid {
+        display: grid;
+        gap: 20px;
+      }
+
+      .grid-2 {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      }
+
+      .card {
+        background: var(--card);
+        border-radius: 16px;
+        padding: 20px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      }
+
+      .btn {
+        background: var(--primary);
+        color: rgb(233, 238, 234);
+        border: none;
+        border-radius: 12px;
+        padding: 10px 16px;
+        cursor: pointer;
+        font-weight: 600;
+        transition: background 0.3s ease;
+      }
+
+      .btn:hover {
+        background: #1d4ed8; /* Blue-700 */
+      }
+
+      .btn.red { background: var(--bad); }
+      .btn.green { background: var(--ok); }
+      .btn.yellow { background: var(--warn); }
+
+      .pill {
+        display: inline-block;
+        padding: 4px 12px;
+        border-radius: 999px;
+        font-size: 12px;
+        font-weight: 700;
+      }
+
+      .ok { background: rgba(34, 197, 94, .15); color: #16a34a; }
+      .bad { background: rgba(239, 68, 68, .15); color: #dc2626; }
+      .warn { background: rgba(245, 158, 11, .15); color: #d97706; }
+
+      .swiper-slide img {
+        width: 100%;
+        height: 320px;
+        object-fit: cover;
+        border-radius: 16px;
+      }
+      footer {
+        background-color: #8ba7e9;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 14px;
+        color:black;
+      }
+
+         </style>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
